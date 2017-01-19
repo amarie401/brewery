@@ -1,2 +1,2 @@
 # brewery
-practicing css positioning and responsive/ui design principles
+practicing css positioning and responsive/ui design principles (not fully responsive)
