@@ -1,0 +1,281 @@
+.site-container{
+  max-width: 100%;
+}
+
+/*************************
+ Navigation
+**************************/
+.navbar-container{
+  background: white;
+  /*display: flex;*/
+  overflow: hidden;
+}
+
+nav ul {
+  float: right;
+  list-style: none;
+  overflow: hidden;
+}
+
+nav ul.brand {
+  float: left;
+}
+
+nav li {
+  float: left;
+  font-family: Sans-Serif;
+  margin: 10px;
+
+}
+
+nav li.brand-name {
+  border: none;
+}
+
+.brand-name {
+  font-family: 'Kaushan Script', cursive, sans-serif;
+  font-size: 30px;
+  float: left;
+}
+
+ul li {
+  color: black;
+  display: block;
+  padding: 14px 16px;
+  text-align: center;
+}
+
+nav ul li {
+  transition: all .3s ease-in;
+  font-family: 'Arsenal', sans-serif;
+}
+
+nav ul li:hover {
+  transform: scale(1.5);
+}
+
+li a {
+  color: black;
+}
+
+li a:hover {
+  background-color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*************************
+ Hero
+**************************/
+.hero-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.hero {
+  color: #fff;
+  padding: 9rem 0 0;
+  margin: 0px;
+  height: 90vh;
+  background: linear-gradient(-53deg, rgba(53, 8, 22, .7), rgba(160, 126, 62, .43)), url(../images/hero.jpg) center center / cover no-repeat;
+}
+
+/*************************
+ Beer Section
+**************************/
+.beer-container {
+  margin: 0 auto;
+  width: 753px;
+}
+
+div.item {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+}
+
+div .item span {
+  font-family: 'Arsenal', sans-serif;
+}
+.item img {
+    height: 300px;
+    margin: 20px;
+}
+.caption {
+    display: block;
+    text-transform: uppercase;
+}
+
+/*************************
+ Contact Section
+**************************/
+#wrap {
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+
+.logo {
+  text-align: center;
+}
+
+.box1 {
+  padding: 25px;
+  background-color: #F9F9F9;
+  border-radius: 5px;
+  box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+}
+
+.form {
+  margin: auto;
+}
+
+.contact {
+  float: right;
+  padding-bottom: 20px;
+  line-height: 20px;
+  color: #999999;
+}
+
+.contact p {
+  font-family: 'Arsenal', sans-serif;
+}
+
+input {
+  width: 200px;
+  padding: 9px;
+  outline: 0;
+  border: solid 1px #E5E5E5;
+  background-color: #FFFFFF;
+  box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+}
+
+textarea {
+  width: 530px; max-width: 530px;
+  height: 150px;
+  line-height: 150%;
+  font-size: 14px;
+  color: #D7D7D7;
+}
+
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+  border-color: #C9C9C9;
+}
+
+.text textarea:focus {
+  color: #000;
+}
+
+.form label {
+  margin-left: 10px;
+  color: #999999;
+}
+
+.submit input {
+  width: 100px;
+  padding: 9px 15px;
+  font-size: 14px;
+  color: #FFFFFF;
+  background-color: #11A7F2;
+  border: 0;
+  border-radius: 2px;
+}
+
+.submit input:hover {
+  cursor: pointer;
+  background-color: #1281B8;
+}
+
+div form p {
+  padding: 5px;
+}
+
+label {
+  font-family: 'Arsenal', sans-serif;
+}
+
+/*************************
+ FOOTER
+**************************/
+footer {
+  margin-top: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.icons li {
+  display: inline-block;
+  transition: all .3s ease-in;
+}
+
+.icons li:hover {
+  transform: scale(1.5);
+}
+
+.icons span {
+  font-family: 'Arsenal', sans-serif;
+}
+
+/*************************
+ MEDIA QUERIES
+**************************/
+@media screen and (max-width: 1178px) {
+  textarea {
+    width: 450px;
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  textarea {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 974px) {
+ .contact {
+   display:block;
+ }
+  textarea {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 935px) {
+  textarea {
+    width: 200px;
+  }
+  .navbar-container {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 935px) {
+  .beer-container{
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .beer-container{
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .beer-container{
+    width: 200px;
+  }
+}
+
+media screen and (max-width: 513px) {
+  textarea {
+    width: 200px;
+  }
+  .item {
+    display: flex;
+  }
+}
