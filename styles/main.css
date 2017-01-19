@@ -73,6 +73,7 @@ a {
   position: relative;
   overflow: hidden;
   width: 100%;
+  padding-bottom: 100px;
 }
 
 .hero {
@@ -87,14 +88,16 @@ a {
  Beer Section
 **************************/
 .beer-container {
-  margin: 0 auto;
-  width: 753px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 50px;
 }
 
-div.item {
-    vertical-align: top;
-    display: inline-block;
-    text-align: center;
+.item {
+  vertical-align: top;
 }
 
 div .item span {
@@ -102,20 +105,21 @@ div .item span {
 }
 .item img {
     height: 300px;
-    margin: 20px;
 }
 .caption {
     display: block;
     text-transform: uppercase;
+    text-align: center;
 }
 
 /*************************
  Contact Section
 **************************/
-#wrap {
-  width: 50%;
-  margin: 0 auto;
-  padding-top: 100px;
+.contact-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .logo {
@@ -145,7 +149,7 @@ div .item span {
 }
 
 input {
-  width: 200px;
+  /*width: 200px;*/
   padding: 9px;
   outline: 0;
   border: solid 1px #E5E5E5;
@@ -154,7 +158,7 @@ input {
 }
 
 textarea {
-  width: 530px; max-width: 530px;
+  width: 100%;
   height: 150px;
   line-height: 150%;
   font-size: 14px;
@@ -196,6 +200,7 @@ div form p {
 
 label {
   font-family: 'Arsenal', sans-serif;
+  /*display: block;*/
 }
 
 /*************************
@@ -223,7 +228,69 @@ footer {
 /*************************
  MEDIA QUERIES
 **************************/
-@media screen and (max-width: 1178px) {
+/* Mobile */
+/*@media screen and (min-width: 320px) {
+
+}
+
+/* Mobile*/
+@media screen and (max-width: 400px) {
+  /*body {
+    background: red;
+  }*/
+  .box1 {
+    width: 100%;
+  }
+  .contact {
+    float: left;
+  }
+  ul li {
+    padding: 5px;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 401px) and (max-width: 800px) {
+  /*body {
+    background: blue;
+  }*/
+  .box1 {
+    min-width: 400px;
+    margin: 10px;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 801px) {
+  /*body {
+    background: green;
+  }*/
+
+  form {
+    width: 590px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*@media screen and (max-width: 1178px) {
   textarea {
     width: 450px;
   }
@@ -278,4 +345,4 @@ media screen and (max-width: 513px) {
   .item {
     display: flex;
   }
-}
+}*/
